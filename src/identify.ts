@@ -6,7 +6,7 @@ const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL });
 const prisma = new PrismaClient({ adapter });
 
 export async function identifyHandler(req: Request, res: Response) {
-  const { email, phoneNumber } = req.body;
+  const { email, phoneNumber } = req.body || {};
 
   const emailStr = email ? String(email) : null;
   const phoneStr = phoneNumber ? String(phoneNumber) : null;
