@@ -4,7 +4,7 @@ Backend service for identifying and consolidating customer contacts across multi
 
 ## Live Endpoint
 
-**Base URL:** `<YOUR_RENDER_URL>`
+**Base URL:** `https://bitespeed-vrg2.onrender.com`
 
 **POST** `/identify`
 
